@@ -87,6 +87,11 @@ Crafty.c('PlayerCharacter', {
             .bind('Moved', this.checkCollision)
             .onHit('Village', this.visitVillage)
             .bind('NewDirection', this.changeDirection)
+
+            /*
+                Define the player animations reels for the
+                four directions the player can walk. chr
+             */
             .reel('player_up', 500, 0, 0, 3)
             .reel('player_right', 500, 0, 1, 3)
             .reel('player_down', 500, 0, 2, 3)
