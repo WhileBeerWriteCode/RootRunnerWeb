@@ -1,0 +1,22 @@
+{
+  "name": "rootrunner",
+  "version": "0.1",
+  "authors": [
+    "Benjamin Daschel <coffeemaxed@gmail.com>"
+  ],
+  "description": "a game for hackers",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "crafty": "~0.6.3"
+  }
+}
