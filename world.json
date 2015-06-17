@@ -1,0 +1,13 @@
+{
+  "version": 0.1,
+  "maps":{
+    "/home":{
+
+    }
+  },
+  "start": "/home",
+  "defaults":{
+    "width": 32,
+    "height": 32
+  }
+}

@@ -38,7 +38,18 @@ Crafty.scene("Loading", function(){
           }
       }
     };
+
+    var deferredAssets = $.Deferred();
     Crafty.load(assets, function(){
-//       Crafty.scene('Game');
+        deferredAssets.resolve();
     });
+
+    var deferredMaps = $.ajax("world.json").done(function(data){
+        console.log(data);
+        Crafty.asset('world', data);
+    });
+
+    $.when(deferredAssets, deferredMaps).then(function(){
+       Crafty.scene('Game');
+    })
 });
